@@ -17,7 +17,7 @@
 }
 *::selection{
     background-color: var(--yellow);
-    color: var(--white);
+    color: var(--black);
 }
 ::-webkit-scrollbar{
     height: .5rem;
@@ -172,7 +172,17 @@ section{
 .footer .grid .box a:hover{
     text-decoration: underline;
 }
-
+.credit{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.credit span{
+    color: var(--yellow);
+}
 
 
 
