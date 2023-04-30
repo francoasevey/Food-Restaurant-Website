@@ -139,6 +139,21 @@ section{
     color: var(--yellow);
     text-decoration: underline;
 }
+.hero .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.hero .slide .image{
+    flex: 1 1 40rem;
+}
+.hero .slide .image img{
+    width: 100%;
+}
+.hero .slide .content{
+    flex: 1 1 40rem;
+}
 .footer .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
