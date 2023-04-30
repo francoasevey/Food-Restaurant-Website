@@ -153,6 +153,17 @@ section{
 }
 .hero .slide .content{
     flex: 1 1 40rem;
+    text-align: center;
+}
+.hero .slide .content span{
+    font-size: 2rem;
+    color: var(--light-color);
+}
+.hero .slide .content h3{
+    margin: 1rem 0;
+    font-size: 6rem;
+    color: var(--black);
+    text-transform: capitalize;
 }
 .footer .grid{
     display: grid;
