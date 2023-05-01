@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -81,6 +82,92 @@
         </div>
     </section>
 
+    <section class="reviews">
+        <h1 class="title">customer's reviews</h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-1.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-2.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-3.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-4.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-5.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="/images/pic-6.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem officiis delectus autem numquam, optio veritatis deleniti, deserunt adipisci explicabo distinctio necessitatibus excepturi quibusdam facilis similique nam nihil, reiciendis laboriosam esse.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h1>john deo</h1>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <footer class="footer">
         <section class="grid">
             <div class="box">
@@ -113,6 +200,29 @@
 
         <div class="credit">creadet by <span>franco asevey</span> | all rights reserved!</div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
+    <script>
+        var swiper = new Swiper(".reviews-slider", {
+            loop:true,
+            grabCursor: true,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                700: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
