@@ -43,9 +43,11 @@ section{
 .title{
     text-align: center;
     margin-bottom: 2.5rem;
-    font-size: 4ren;
+    font-size: 4rem;
     color: var(--black);
     text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 .heading{
     display: flex;
@@ -349,6 +351,28 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     align-items: flex-start;
+}
+.steps .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.steps .box-container .box img{
+    height: 15rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.steps .box-container .box h3{
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.steps .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
 }
 .footer .grid{
     display: grid;
