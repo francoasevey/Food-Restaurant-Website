@@ -47,6 +47,31 @@ section{
     color: var(--black);
     text-transform: uppercase;
 }
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-flow: column;
+    background-color: var(--black);
+    min-height: 20rem;
+}
+.heading h3{
+    font-size: 5rem;
+    color: var(--white);
+    text-transform: capitalize;
+}
+.heading p{
+    font-size: 2.3rem;
+    color: var(--light-color);
+}
+.heading p a{
+    color: var(--yellow);
+}
+.heading p a:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
 .btn,
 .delete-btn{
     margin-top: 1rem;
@@ -287,6 +312,44 @@ section{
     font-size: 1.8rem;
     color: var(--black);
 }
+.products .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about .row .image{
+    flex: 1 1 40rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.about .row .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+.steps .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
 .footer .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -331,25 +394,6 @@ section{
 .credit span{
     color: var(--yellow);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:991px){
     html{
         font-size: 55%;
@@ -388,5 +432,11 @@ section{
     }
     .hero .slide .content h3{
         font-size: 5rem;
+    }
+    .products .box-container{
+        grid-template-columns: 1fr;
+    }
+    .heading h3{
+        font-size: 4rem;
     }
 }
