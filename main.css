@@ -45,6 +45,7 @@ section{
     margin-bottom: 2.5rem;
     font-size: 4ren;
     color: var(--black);
+    text-transform: uppercase;
 }
 .btn,
 .delete-btn{
