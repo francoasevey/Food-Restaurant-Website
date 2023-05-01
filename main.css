@@ -142,8 +142,9 @@ section{
 .hero .slide{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 .hero .slide .image{
     flex: 1 1 40rem;
@@ -164,6 +165,9 @@ section{
     font-size: 6rem;
     color: var(--black);
     text-transform: capitalize;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--yellow);
 }
 .footer .grid{
     display: grid;
@@ -260,5 +264,8 @@ section{
     }
     .header .flex .logo{
         font-size: 2rem;
+    }
+    .hero .slide .content h3{
+        font-size: 5rem;
     }
 }
