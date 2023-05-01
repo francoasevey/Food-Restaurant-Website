@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant Website</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-blunde.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -113,10 +113,18 @@
         <div class="credit">creadet by <span>franco asevey</span> | all rights reserved!</div>
     </footer>
     
-    <script src="https://unpkg.com/swiper@8/swiper-blunde.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
     <script>
-
+        var swiper = new Swiper(".hero-slider", {
+            loop:true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 </body>
 </html>
