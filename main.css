@@ -406,6 +406,24 @@ section{
     text-transform: capitalize;
     color: var(--black);
 }
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form{
+    border: var(--border);
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+}
 .footer .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
