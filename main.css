@@ -442,6 +442,17 @@ section{
     height: 15rem;
     resize: none;
 }
+.search-form form{
+    display: flex;
+    gap: 1rem;
+}
+.search-form form .box{
+    width: 100%;
+    border: var(--border);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
 .footer .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
